@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="CSS/join.css" rel="stylesheet" >
+    <title>Join Now</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-absolute top-0 start-0 d-flex">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item justify-content-end">
+                <a class="nav-link" href="index.html"> ⬅️ Back to Home </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="login">
+      
+              <h1 class="text-center">Hello Again!</h1>
+              
+              <form class="needs-validation">
+                  <div class="form-group was-validated">
+                      <label class="form-label" for="email">Email address</label>
+                      <input class="form-control log-email" type="email" id="email" required>
+                      <div class="invalid-feedback">
+                          Please enter your email address
+                      </div>
+                  </div>
+                  <div class="form-group was-validated">
+                      <label class="form-label" for="password">Password</label>
+                      <input class="form-control log-password" type="password" id="password" required>
+                      <div class="invalid-feedback">
+                          Please enter your password
+                      </div>
+                  </div>
+                  <p >
+                   Don't you have an account? <a href="register.html"> Register</a>
+                  </p>
+                  <input class="btn btn-success w-100 log-in-btn" type="submit" value="SIGN IN">
+              </form>
+       </div>
+      
+
+      <script src="JS/login_fetch.js"></script>
+      <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

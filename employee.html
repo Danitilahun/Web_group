@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/admin.css">
+    <title>Employee</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-light bg-light justify-content-between">
+        <li class="flex-sm-start text-sm-start col-md-4">
+          <a href="index.html">
+              <img class="logo" src="image/find-jobs.png" alt="website logo which says find jobs" width="auto" height="60">
+          </a>
+        </li>
+  
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Job List</button>
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Job Applied</button>
+          </div>
+        </nav>
+    </nav>
+
+    <div class="tab-content" id="nav-tabContent">
+
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="tab-pane show" id="jobs">
+                <div class="container mb-3" style="margin-top:3rem">
+                    <form action="" class="d-flex">
+                        <input type="search" class="form-control me-2" placeholder="Search by job title">
+                        <button type="send"  class="btn btn-outline-info">Search</button>
+                    </form>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="data_table">
+                                <table id="example" class="table table-striped table-bordered">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Location</th>
+                                            <th>Email</th>
+                                            <th>Phone</th>
+                                            <th>Delete</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="users">
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <div class="container mb-3" style="margin-top:3rem">
+                <form action="" class="d-flex">
+                    <input type="search" class="form-control me-2" placeholder="Search by job title">
+                    <button type="send"  class="btn btn-outline-info">Search</button>
+                </form>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="data_table">
+                            <table id="example" class="table table-striped table-bordered">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>Job Title</th>
+                                        <th>Location</th>
+                                        <th>Status</th>
+                                        <th>Start date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-label="Job Title">Senior Procurement officer</td>
+                                        <td data-label="Location">Addis Abeba</td>
+                                        <td data-label="Status">Open</td>
+                                        <td data-label="date">1/25/2023</td>
+                                    </tr>                                     
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay hide">
+        <button class="close">&times;</button>
+        <form class="form">
+            <div class="title">
+              <p> FUll Information </p>
+            </div>
+      
+            <div class="inputs">
+              <div class="input_field">
+                <label for="Status"> Status </label>
+                <input
+                  type="text"
+                  id="Sta_tus"
+                  name="Status"
+                  class="input"
+                  placeholder="Open"
+                />
+              </div>
+      
+              <div class="input_field">
+                <label for="jobTitle"> job Title</label>
+                <input
+                  type="text"
+                  id="job_Title"
+                  name="jobTitle"
+                  class="input"
+                  placeholder="Senior Procurement officer"
+                />
+              </div>
+      
+              <div class="input_field">
+                <label for="Company"> Company </label>
+                <input
+                  type="text"
+                  id="Comp_any"
+                  name="Company"
+                  class="input"
+                  placeholder="Woda Metal Industry PLC"
+                />
+              </div>
+      
+              <div class="input_field">
+                <label for="JobType"> Job Type </label>
+                <input
+                  type="text"
+                  id="Job_Type"
+                  name="JobType"
+                  class="input"
+                  placeholder="Permanent"
+                />
+              </div>
+              
+              <div class="input_field description">
+                <label for="subject"> Description </label>
+                <ul>
+                  <li>
+      
+                    <div class="input_field">
+                      <label for="Qualifications"> level of education </label>
+                      <input
+                        type="text"
+                        id="Qualifi_cations"
+                        name="Qualifications"
+                        class="input"
+                        placeholder="BA Degree in procurement"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input_field">
+                      <label for="Experience"> Experience</label>
+                      <input
+                        type="text"
+                        id="Exper_ience"
+                        name="Experience"
+                        class="input"
+                        placeholder="5 years relevant experience"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                
+                    <div class="input_field">
+                      <label for="location"> Location </label>
+                      <input
+                        type="text"
+                        id="Loca_tion"
+                        name="location"
+                        class="input"
+                        placeholder="2 years"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                 
+                    <div class="input_field">
+                      <label for="Minimum Years Of Experience"> Quanitity Required</label>
+                      <input
+                        type="text"
+                        id="Quanitity-Required"
+                        name="Quanitity Required"
+                        class="input"
+                        placeholder="1"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                  
+                    <div class="input_field">
+                      <label for="Salary"> Salary</label>
+                      <input
+                        type="text"
+                        id="Sal_ary"
+                        name="Salary"
+                        class="input"
+                        placeholder="as per company scale"
+                      />
+                    </div>
+                  </li>
+                  <li>
+            
+                    <div class="input_field">
+                      <label for="Deadline"> Deadline</label>
+                      <input
+                        type="text"
+                        id="Dead_line"
+                        name="Deadline"
+                        class="input"
+                        placeholder="December 7, 2022 To Apply"
+                      />
+                    </div>
+                  </li>
+                </ul>
+                
+              </div>
+      
+              <div class="input_field description">
+                <label for="Required qualities"> Subject</label>
+                <ul class="requirement">
+                  <li>highly experienced in managing purchase orders</li>
+                  <li>good Knowledge of inventory control process</li>
+                  <li>exceptional knowledge of purchasing techniques and tools</li>
+                  <li>Familiarity with ERP systems</li>
+                </ul>
+            
+              </div>
+      
+              <div class="input_field description">
+                <label for="Notice"> Notice </label>
+                <ul class="notice">
+                  <li><em> please don't apply if you don't have the necessary qualification </em></li>
+                  <li><strong> Female Applicants are encouraged to apply </strong></li>
+                </ul>
+            
+              </div>
+              
+              <div class="input_field ">
+                <input type="Submit" value="Apply" class="button_apply">
+                <input type="Submit" value="Apply" class="button_apply">
+              </div> -->
+            </form>
+    </div>
+    <script src="JS/employee_fetch.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
