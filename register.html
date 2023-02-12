@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FORM</title>
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="container-xxl mt-5 align-middle reg-form" >
+      
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Employee</button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Employer</button>
+            </div>
+          </nav>
+
+          <div class="tab-content " id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <h3 class="register-heading " >Apply as a Employee</h3>
+                        <div class="row register-form">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control first_name" placeholder="First Name *" value="" required/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control last_name" placeholder="Last Name *" value=""  required/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control password" placeholder="Password *" value=""  required/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control confirm_password"  placeholder="Confirm Password *" value=""  required />
+                                    <p id = "err-msg-1" style="background-color: brown;">Passwords do not match!</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control email" placeholder="Your Email *" value=""  required />
+                                    <div class = "email-err-1"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input  type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control phone" placeholder="Your Phone *" value=""  required />
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control security_question">
+                                        <option class="hidden"  selected disabled>Please select your Security Question</option>
+                                        <option>What is your Birthdate?</option>
+                                        <option>What is Your old Phone Number</option>
+                                        <option>What is your Pet Name?</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control answer" placeholder="Enter Your Answer *" value=""  required />
+                                </div>
+                                <p style="color:red;">
+                                    Already have an account? <a  style="color:rgb(193, 168, 168);" href="join.html">Log in</a>
+                                </p>
+<input type="submit" class="btnRegister register"  value="Register"  required/>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <h3  class="register-heading">Apply as a Hirer</h3>
+                        <div class="row register-form">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control first-name" placeholder="First Name *" value=""  required/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control last-name" placeholder="Last Name *" value=""  required />
+                                </div> 
+                                <div class="form-group">
+                                    <input type="email" class="form-control e_mail" placeholder="Email *" value=""  required />
+                                    <div class = "email-err-2"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" maxlength="10" minlength="10" class="form-control p_hone" placeholder="Phone *" value=""  required />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="password" class="form-control pass_word" placeholder="Password *" value=""  required/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control confirm-password" placeholder="Confirm Password *" value=""  required/>
+                                    <p id = "err-msg" style="background-color: brown;">Passwords do not match!</p>
+                                </div>
+                                <div class="form-group security-question">
+                                    <select class="form-control ">
+                                        <option class="hidden"  selected disabled>Please select your Security Question</option>
+                                        <option>What is your Birthdate?</option>
+                                        <option>What is Your old Phone Number</option>
+                                        <option>What is your Pet Name?</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control ans_wer" placeholder="`Answer *" value=""  required/>
+                                </div>
+                            <p>
+                                Already have an account? <a href="#">SignUp</a>
+                            </p>
+                            <input type="submit" class="btnRegister regi_ster"  value="Register"  required/>
+                            </div>
+                        </div>
+                </div>
+            </div>
+          </div>
+      </div>
+<script src="JS/register_fetch.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

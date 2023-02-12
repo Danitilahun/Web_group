@@ -1,0 +1,27 @@
+.reg-form{
+
+background-image: linear-gradient(to right , #000428 , #004e92);
+box-shadow:  10px 10px 8px rgb(206, 105, 105);
+width : 85%;
+border-radius: 1.5rem;
+position: relative;
+margin-top: 50vh;
+}
+
+.register-heading{
+    color : #FFF
+}
+
+.form-group{
+    margin : 1.7rem;
+}
+
+.nav-link{
+    margin: 14px;
+}
+
+.regi_ster , .register{
+    display: block;
+    margin : 2rem;
+}
+
