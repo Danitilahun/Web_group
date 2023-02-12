@@ -18,3 +18,7 @@ There are certain reasons why we chose to use mongodb over SQL database.
 2) Data Formats
 
 	The way mongodb stores data is closely similar to javascript objects and JSON. since we send and requests data in JSON data type , it is easier to use mongodb instead of transforming such a data to a database which follow tabular data formats.
+3) Nested Datas
+
+	There are several circumstances in which we have used nested datas. We found mongodb to be a better choice for such kind of datas to persist.
+	
