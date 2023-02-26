@@ -15,6 +15,9 @@ https://danitilahun.github.io/UGR-2557-13/index.html
 
 1.The front end files are stored in main branch and the backend is stored in the master branch.
 2.The fetch javascript files are found in main branch in JS separate directory.
+3. some backend related things in main are added by fault when our member try to merge it to backend so for for that that file properly documented in master branch backend part of our code.
+
+Thanks in Advance.
 
 There are certain reasons why we chose to use mongodb over SQL database. 
 
