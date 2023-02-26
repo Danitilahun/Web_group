@@ -12,9 +12,8 @@ https://danitilahun.github.io/UGR-2557-13/index.html
 
 
 #Notice sir 
-1.The front end files are stored in main branch and the backend is stored in the master branch.  -->
-2.The fetch javascript files are found in main branch in JS separate directory. -->
-
+1.The front end files are stored in main branch and the backend is stored in the master branch.
+2.The fetch javascript files are found in main branch in JS separate directory.
 There are certain reasons why we chose to use mongodb over SQL database. 
 
 1) Flexibility in schema:
