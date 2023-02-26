@@ -7,8 +7,11 @@
 5. Daniel Tilahun       UGR/2557/13
 
 # Selected Project 
+Project Name Job Finder 
 https://danitilahun.github.io/UGR-2557-13/index.html
-
+#Notice sir 
+<!-- The front end files are stored in main branch and the backend is stored in the master branch.  -->
+<!-- The fetch javascript files are found in main branch in JS separate directory. -->
 
 There are certain reasons why we chose to use mongodb over SQL database. 
 
